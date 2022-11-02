@@ -18,7 +18,7 @@ $sql = mysqli_query($con, $sql) or die("Erro na sql!");
   <div class="wrapper">
 
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__wobble" src="../../../dist/img/logo_groupx_responsivo.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__wobble" src="/painel_adm/dist/img/logo_groupx_responsivo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <?php include('../../includes/views_components/navbar.html') ?>
