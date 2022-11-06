@@ -69,7 +69,7 @@ $tr = new GoogleTranslate();
                 <a class="nav-link" href="menuen.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="abouten.html">About</a>
+                <a class="nav-link" href="abouten.php">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="booken.html">Contact</a>
@@ -126,6 +126,8 @@ $tr = new GoogleTranslate();
     <div class="offer_container">
       <div class="container ">
         <div class="row">
+
+          <?php if ($dados !== null) { ?>
             <div class="col-md-6 ">
               <div class="box ">
                 <div class="img-box">
@@ -142,6 +144,7 @@ $tr = new GoogleTranslate();
                 </div>
               </div>
             </div>
+          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">

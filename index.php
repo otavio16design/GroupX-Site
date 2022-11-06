@@ -63,7 +63,7 @@ $dados2 = mysqli_fetch_array($sql2);
                 <a class="nav-link" href="menu.html">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre</a>
+                <a class="nav-link" href="about.php">Sobre</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">Contato</a>

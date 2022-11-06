@@ -64,7 +64,7 @@ $tr = new GoogleTranslate();
                 <a class="nav-link" href="menuen.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="abouten.html">About</a>
+                <a class="nav-link" href="abouten.php">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="booken.html">Contact</a>

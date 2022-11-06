@@ -75,13 +75,13 @@ $tr = new GoogleTranslate();
                 <a class="nav-link" href="menuen.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="abouten.html">About</a>
+                <a class="nav-link" href="abouten.php">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="booken.html">Contact</a>
               </li>
             </ul>
-            <a class="btn" href="about.html"> <img class='br' src="images/bandeiradobrasil.png"></a>
+            <a class="btn" href="about.php"> <img class='br' src="images/bandeiradobrasil.png"></a>
           </div>
         </nav>
       </div>

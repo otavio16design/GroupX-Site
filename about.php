@@ -69,13 +69,13 @@ $dados = mysqli_fetch_array($sql);
                 <a class="nav-link" href="menu.html">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre</a>
+                <a class="nav-link" href="about.php">Sobre</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">Contato</a>
               </li>
             </ul>
-            <a class="btn" href="abouten.html"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
+            <a class="btn" href="abouten.php"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
           </div>
         </nav>
       </div>
