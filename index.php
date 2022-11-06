@@ -115,7 +115,7 @@ $dados2 = mysqli_fetch_array($sql2);
     <div class="offer_container">
       <div class="container ">
         <div class="row">
-   
+          <?php if ($dados !== null) { ?>
             <div class="col-md-6 ">
               <div class="box ">
                 <div class="img-box">
@@ -131,6 +131,7 @@ $dados2 = mysqli_fetch_array($sql2);
                 </div>
               </div>
             </div>
+          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">
