@@ -95,31 +95,34 @@ $tr = new GoogleTranslate();
 
       <div class="filters-content">
         <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="/painel_adm/views/produto/<?php echo $dados['pro_imagem'] ?>" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    <?php echo $tr->translate('pt', 'en', $dados['pro_nome']), PHP_EOL ?>
-                  </h5>
-                  <p>
-                    <?php echo $tr->translate('pt', 'en', $dados['pro_descricao']), PHP_EOL ?>
-                  </p>
-                  <div class="options">
-                    <h6>
-                      Checkin prices
-                    </h6>
-                    <a href="<?php echo $dados['pro_link'] ?>">
-                      <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-                    </a>
+
+          <?php while ($dados !== null) { ?>
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box">
+                    <img src="/painel_adm/views/produto/<?php echo $dados['pro_imagem'] ?>" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      <?php echo $tr->translate('pt', 'en', $dados['pro_nome']), PHP_EOL ?>
+                    </h5>
+                    <p>
+                      <?php echo $tr->translate('pt', 'en', $dados['pro_descricao']), PHP_EOL ?>
+                    </p>
+                    <div class="options">
+                      <h6>
+                        Checkin prices
+                      </h6>
+                      <a href="<?php echo $dados['pro_link'] ?>">
+                        <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-sm-6 col-lg-4 all pizza">

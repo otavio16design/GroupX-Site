@@ -115,22 +115,23 @@ $dados2 = mysqli_fetch_array($sql2);
     <div class="offer_container">
       <div class="container ">
         <div class="row">
-
-          <div class="col-md-6 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/painel_adm/views/promocao/<?php echo $dados['prm_imagem'] ?>" alt="">
-              </div>
-              <div class="detail-box">
-                <h5> <?php echo $dados['prm_produto'] ?> </h5>
-                <h6><span><?php echo $dados['prm_porcentagem'] ?></span> Off</h6>
-                <a href="<?php echo $dados['prm_link'] ?>">
-                  Comprar Agora
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+          <?php if ($dados !== null) { ?>
+            <div class="col-md-6 ">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="/painel_adm/views/promocao/<?php echo $dados['prm_imagem'] ?>" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5> <?php echo $dados['prm_produto'] ?> </h5>
+                  <h6><span><?php echo $dados['prm_porcentagem'] ?></span> Off</h6>
+                  <a href="<?php echo $dados['prm_link'] ?>">
+                    Comprar Agora
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">

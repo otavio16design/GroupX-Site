@@ -126,23 +126,24 @@ $tr = new GoogleTranslate();
     <div class="offer_container">
       <div class="container ">
         <div class="row">
+          <?php if ($dados !== null) { ?>
+            <div class="col-md-6 ">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="/painel_adm/views/promocao/<?php echo $dados['prm_imagem'] ?>" alt="">
+                </div>
+                <div class="detail-box">
 
-          <div class="col-md-6 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/painel_adm/views/promocao/<?php echo $dados['prm_imagem'] ?>" alt="">
-              </div>
-              <div class="detail-box">
-
-                <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
-                <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
-                <a href="<?php echo $dados['prm_link'] ?>">
-                  Buy Now
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+                  <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
+                  <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
+                  <a href="<?php echo $dados['prm_link'] ?>">
+                    Buy Now
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">
@@ -464,17 +465,17 @@ $tr = new GoogleTranslate();
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" >
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" class="form-control" placeholder="Seu Nome" />
+                <input type="text" class="form-control" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Descrição" />
+                <input type="text" class="form-control" placeholder="Description" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Seu email" />
+                <input type="email" class="form-control" placeholder="Your e-mail" />
               </div>
               <div>
                 <input type="date" class="form-control">
