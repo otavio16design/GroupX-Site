@@ -27,7 +27,7 @@ if ($_FILES['txt_imagem']['name'] == '') {
     } else if ($arqSize > $tamanhoPermitido) {
       echo 'O tamanho do arquivo enviado é maior que o limite!';
     } else {
-      $pasta = 'fotos/';
+      $pasta = FOTO_DIRETORIO;
       $extensao = strtolower(end(explode('.', $arqName)));
       $nome = time() . '.' . $extensao;
       $destino = $pasta . $nome;

@@ -37,7 +37,7 @@ if ($arqError == 0) {
     echo 'O tamanho do arquivo enviado é maior que o limite!';
     // Não houveram erros, move o arquivo
   } else {
-    $pasta = 'fotos/';
+    $pasta = FOTO_DIRETORIO;
     // Pega a extensão do arquivo enviado
     $extensao = strtolower(end(explode('.', $arqName)));
     // Define o novo nome do arquivo

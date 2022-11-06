@@ -1,6 +1,7 @@
 <?PHP
 require_once('../../conexao/banco.php');
 require_once('../../seguranca.php');
+require_once('../../config/environment.php');
 
 $id = $_REQUEST['id_produto'];
 $produto = $_REQUEST['produto'];
@@ -27,7 +28,7 @@ if ($_FILES['txt_imagem']['name'] == '') {
     } else if ($arqSize > $tamanhoPermitido) {
       echo 'O tamanho do arquivo enviado é maior que o limite!';
     } else {
-      $pasta = 'fotos/';
+      $pasta = FOTO_DIRETORIO;
       $extensao = strtolower(end(explode('.', $arqName)));
       $nome = time() . '.' . $extensao;
       $destino = $pasta . $nome;
