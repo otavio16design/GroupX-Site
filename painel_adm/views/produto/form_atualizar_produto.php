@@ -48,12 +48,12 @@ $dados = mysqli_fetch_array($sql);
                 <div class="card-header">
                   <h3 class="card-title">Produto</h3>
                 </div>
-                <form method="post" action="atualizar_produto.php">
+                <form method="post" action="atualizar_produto.php" enctype="multipart/form-data">
                   <div class="card-body">
                     <div class="form-group">
                       <div class="col-12  mb-3">
 
-                        <input type="text" name="id_produto" hidden value="<?php echo $dados['pro_id']?>">
+                        <input type="text" name="id_produto" hidden value="<?php echo $dados['pro_id'] ?>">
 
                         <label for="exampleInputEmail1">Produto</label>
                         <input type="text" class="form-control" value="<?php echo $dados['pro_nome'] ?>" name="produto" placeholder="Insira o nome">
@@ -66,10 +66,13 @@ $dados = mysqli_fetch_array($sql);
                         <label for="exampleInputFile">Imagem</label>
                         <div class="input-group">
                           <div class="custom-file">
-                            <input type="file" name="imagem" class="custom-file-input" id="exampleInputFile">
+                            <input type="file" name="txt_imagem" class="custom-file-input">
                             <label class="custom-file-label">Selecionar arquivo</label>
                           </div>
                         </div>
+                      </div>
+                      <div class="col-12  mb-3">
+                        <img src="<?php echo $dados['pro_imagem'] ?>" style="width: 100px;">
                       </div>
                       <div class="col-12  mb-3">
                         <label>Link de Compra</label>
@@ -78,13 +81,19 @@ $dados = mysqli_fetch_array($sql);
                     </div>
 
                     <div class="col-12  mb-3">
-                        <label>Empresa</label>
-                        <select class="form-control" name="empresa">
-                          <option <?php if($dados['pro_empresa'] == "Fixa Artigos Personalizados") {echo "selected";} ?>  value="Fixa Artigos Personalizados">Fixa Artigos Personalizados</option>
-                          <option <?php if($dados['pro_empresa'] == "TurboX Parts") {echo "selected";} ?> value="TurboX Parts">TurboX Parts</option>
-                          <option <?php if($dados['pro_empresa'] == "Lumos Pets") {echo "selected";} ?> value="Lumos Pets">Lumos Pets</option>
-                        </select>
-                      </div>
+                      <label>Empresa</label>
+                      <select class="form-control" name="empresa">
+                        <option <?php if ($dados['pro_empresa'] == "Fixa Artigos Personalizados") {
+                                  echo "selected";
+                                } ?> value="Fixa Artigos Personalizados">Fixa Artigos Personalizados</option>
+                        <option <?php if ($dados['pro_empresa'] == "TurboX Parts") {
+                                  echo "selected";
+                                } ?> value="TurboX Parts">TurboX Parts</option>
+                        <option <?php if ($dados['pro_empresa'] == "Lumos Pets") {
+                                  echo "selected";
+                                } ?> value="Lumos Pets">Lumos Pets</option>
+                      </select>
+                    </div>
 
                     <div class="col-md-12">
                       <button type="submit" class="btn btn-primary">Editar</button>

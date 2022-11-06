@@ -39,7 +39,7 @@ $dados = mysqli_fetch_array($sql);
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.php">
             <span>
-              GroupX
+            <img src="images/Logo_GroupX-branco.png">
             </span>
           </a>
 

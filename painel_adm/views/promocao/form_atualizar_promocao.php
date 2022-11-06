@@ -48,7 +48,7 @@ $dados = mysqli_fetch_array($sql);
                 <div class="card-header">
                   <h3 class="card-title">Promoção</h3>
                 </div>
-                <form method="post" action="atualizar_promocao.php">
+                <form method="post" action="atualizar_promocao.php" enctype="multipart/form-data">
                   <div class="card-body">
                     <div class="form-group">
                       <input type="text" hidden  value="<?php echo $dados['prm_id'] ?>" name="id_promocao">
@@ -68,6 +68,18 @@ $dados = mysqli_fetch_array($sql);
                             <label class="custom-file-label" for="exampleInputFile">Selecionar arquivo</label>
                           </div>
                         </div>
+                      </div>
+                      <div class="col-12  mb-3">
+                        <label for="exampleInputFile">Imagem</label>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" name="txt_imagem" class="custom-file-input">
+                            <label class="custom-file-label">Selecionar arquivo</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12  mb-3">
+                        <img src="<?php echo $dados['prm_imagem'] ?>" style="width: 100px;">
                       </div>
                       <div class="col-12  mb-3">
                         <label >Link de Compra</label>
