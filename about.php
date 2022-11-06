@@ -1,3 +1,10 @@
+<?php 
+require_once 'painel_adm/conexao/banco.php';
+$sql = "select *, date_format(sob_data_cadastro,'%d/%m/%Y') as data_cadastro from sobre ORDER BY 2";
+$sql = mysqli_query($con, $sql) or die("Erro na sql!");
+$dados = mysqli_fetch_array($sql);
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -53,22 +60,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
-                <a class="nav-link" href="indexen.php"><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php"><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="indexen.php">Home Page</a>
+                <a class="nav-link" href="index.php">Principal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menuen.html">Products</a>
+                <a class="nav-link" href="menu.html">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="abouten.html">About</a>
+                <a class="nav-link" href="about.html">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="booken.html">Contact</a>
+                <a class="nav-link" href="book.html">Contato</a>
               </li>
             </ul>
-            <a class="btn" href="about.html"> <img class='br' src="images/bandeiradobrasil.png"></a>
+            <a class="btn" href="abouten.html"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
           </div>
         </nav>
       </div>
@@ -91,18 +98,15 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                Sobre Nós
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+            <?php echo $dados['sob_texto'] ?>
             </p>
-            <a href="">
+            <!-- <a href="">
               Read More
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -118,7 +122,7 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Fale Conosco
             </h4>
             <div class="contact_link_box">
               <a href="">
@@ -142,7 +146,7 @@
               GroupX
             </a>
             <p>
-              Below we leave all our social networks to facilitate communication with our customer and facilitate access to our products and promotions.
+              Abaixo deixamos todas as nossas redes sociais para facilitar a comunicação com o nosso cliente e facilitar o acesso aos nossos produtos e promoções.
             </p>
             <div class="footer_social">
               <a href="">
@@ -165,10 +169,10 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Hours of Operation
+            Horário de Funcionamento
           </h4>
           <p>
-           Monday to Friday: 8:00 at 17:00
+            Segunda a Sexta: 8:00 às 17:00
           </p>
         </div>
       </div>

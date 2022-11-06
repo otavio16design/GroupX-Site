@@ -126,7 +126,6 @@ $tr = new GoogleTranslate();
     <div class="offer_container">
       <div class="container ">
         <div class="row">
-          <?php if ($dados !== null) { ?>
             <div class="col-md-6 ">
               <div class="box ">
                 <div class="img-box">
@@ -143,7 +142,6 @@ $tr = new GoogleTranslate();
                 </div>
               </div>
             </div>
-          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">
@@ -465,7 +463,7 @@ $tr = new GoogleTranslate();
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6" >
+        <div class="col-md-6">
           <div class="form_container">
             <form action="">
               <div>
@@ -476,6 +474,25 @@ $tr = new GoogleTranslate();
               </div>
               <div>
                 <input type="email" class="form-control" placeholder="Your e-mail" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    How many persons?
+                  </option>
+                  <option value="1">
+                    Fixa Personalizados
+                  </option>
+                  <option value="2">
+                    TurboX Parts
+                  </option>
+                  <option value="3">
+                    Limpa Pet
+                  </option>
+                  <option value="4">
+                    GroupX Commerce
+                  </option>
+                </select>
               </div>
               <div>
                 <input type="date" class="form-control">

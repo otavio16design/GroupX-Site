@@ -115,7 +115,7 @@ $dados2 = mysqli_fetch_array($sql2);
     <div class="offer_container">
       <div class="container ">
         <div class="row">
-          <?php if ($dados !== null) { ?>
+   
             <div class="col-md-6 ">
               <div class="box ">
                 <div class="img-box">
@@ -131,7 +131,6 @@ $dados2 = mysqli_fetch_array($sql2);
                 </div>
               </div>
             </div>
-          <?php } ?>
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-md-6 ">
@@ -473,16 +472,16 @@ $dados2 = mysqli_fetch_array($sql2);
                   <option value="" disabled selected>
                     Sobre qual empresa?
                   </option>
-                  <option value="">
+                  <option value="1">
                     Fixa Personalizados
                   </option>
-                  <option value="">
+                  <option value="2">
                     TurboX Parts
                   </option>
-                  <option value="">
+                  <option value="3">
                     Limpa Pet
                   </option>
-                  <option value="">
+                  <option value="4">
                     GroupX Commerce
                   </option>
                 </select>
