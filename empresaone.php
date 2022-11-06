@@ -89,7 +89,7 @@ $dados = mysqli_fetch_array($sql);
 
       <div class="filters-content">
         <div class="row grid">
-        <?php while ($dados !== null) { ?>
+        <?php if ($dados !== null) { ?>
           <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
               <div>

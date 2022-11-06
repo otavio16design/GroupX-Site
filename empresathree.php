@@ -90,34 +90,35 @@ $dados = mysqli_fetch_array($sql);
 
       <div class="filters-content">
         <div class="row grid">
-
-          <?php while ($dados !== null) { ?>
-            <div class="col-sm-6 col-lg-4 all pizza">
-              <div class="box">
-                <div>
-                  <div class="img-box">
-                    <img src="/painel_adm/views/produto/<?php echo $dados['pro_imagem'] ?>" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h5>
-                      <?php echo $dados['pro_nome'] ?>
-                    </h5>
-                    <p>
-                      <?php echo $dados['pro_descricao'] ?>
-                    </p>
-                    <div class="options">
-                      <h6>
-                        Checkin prices
-                      </h6>
-                      <a href="<?php echo $dados['pro_link'] ?>">
-                        <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
-                      </a>
-                    </div>
+         
+        <?php if ($dados !== null) { ?>
+        <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="/painel_adm/views/produto/<?php echo $dados['pro_imagem'] ?>" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <?php echo $dados['pro_nome'] ?>
+                  </h5>
+                  <p>
+                    <?php echo $dados['pro_descricao'] ?>
+                  </p>
+                  <div class="options">
+                    <h6>
+                      Checkin prices
+                    </h6>
+                    <a href="<?php echo $dados['pro_link'] ?>">
+                      <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           <?php } ?>
+
 
           <?php while ($dados = mysqli_fetch_array($sql)) { ?>
             <div class="col-sm-6 col-lg-4 all pizza">
