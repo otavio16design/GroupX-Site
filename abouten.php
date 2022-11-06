@@ -132,7 +132,7 @@ $tr = new GoogleTranslate();
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  (19) 98841-1595
+                  (19) 98875-2909
                 </span>
               </a>
               <a href="">
@@ -147,26 +147,18 @@ $tr = new GoogleTranslate();
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              GroupX
+              <img src="/images/Logo_GroupX-branco.png" alt="">
             </a>
             <p>
-              Below we leave all our social networks to facilitate communication with our customer and facilitate access to our products and promotions.
+              Abaixo deixamos as nossas redes sociais para facilitar a comunicação com o nosso cliente e facilitar o
+              acesso aos nossos produtos e promoções.
             </p>
             <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
               <a href="https://www.instagram.com/groupxcommerce/">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
           </div>

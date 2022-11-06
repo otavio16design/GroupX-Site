@@ -92,11 +92,9 @@ $dados2 = mysqli_fetch_array($sql2);
                       quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos
                       nihil ducimus libero ipsam.
                     </p>
-                    <div class="btn-box">
-                      <a href="#book_section layout_padding" class="btn1">
-                        Fale Conosco
+                      <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 50px; padding-left: 3%; background-color: green !important;" class="btn1">
+                      <img src="/images/whatsapp.png" width="25px">
                       </a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -168,13 +166,13 @@ $dados2 = mysqli_fetch_array($sql2);
       </div>
 
       <ul class="filters_menu">
-        <li class="active" data-filter="*">Todos</li>
+        <!-- <li class="active" data-filter="*">Todos</li> -->
       </ul>
 
       <div class="filters-content">
         <div class="row grid">
           <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
+            <div  class="box">
               <div>
                 <div class="img-box">
                   <img src="images/fixa.png" alt="">
@@ -436,9 +434,7 @@ $dados2 = mysqli_fetch_array($sql2);
               </h2>
             </div>
             <p><?php echo $dados2['sob_texto'] ?></p>
-            <a href="">
-              Leia Mais
-            </a>
+            
           </div>
         </div>
       </div>
@@ -516,7 +512,7 @@ $dados2 = mysqli_fetch_array($sql2);
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  (19) 98841-1595
+                  (19) 98875-2909
                 </span>
               </a>
               <a href="">
@@ -531,13 +527,16 @@ $dados2 = mysqli_fetch_array($sql2);
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              GroupX
+              <img src="/images/Logo_GroupX-branco.png" alt="">
             </a>
             <p>
               Abaixo deixamos as nossas redes sociais para facilitar a comunicação com o nosso cliente e facilitar o
               acesso aos nossos produtos e promoções.
             </p>
             <div class="footer_social">
+              <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>
               <a href="https://www.instagram.com/groupxcommerce/">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
