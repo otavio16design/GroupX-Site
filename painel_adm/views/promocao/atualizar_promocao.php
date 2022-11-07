@@ -19,7 +19,20 @@ $arqTemp = $_FILES['txt_imagem']['tmp_name'];
 $arqError = $_FILES['txt_imagem']['error'];
 
 if ($_FILES['txt_imagem']['name'] == '') {
+
+  $sql = "update promocao set
+  prm_id = '$id',
+  prm_produto = '$produto',
+  prm_porcentagem = '$porcentagem',
+  prm_imagem = '$destino',
+  prm_link = '$link'
+where
+  prm_id = '$id'";
+
+  mysqli_query($con, $sql) or die("Erro na sql!");
+
   header("Location: consulta_promocao.php");
+
 } else {
   if ($arqError == 0) {
     if (array_search($arqType, $tiposPermitidos) === false) {
@@ -34,8 +47,6 @@ if ($_FILES['txt_imagem']['name'] == '') {
       $upload = move_uploaded_file($arqTemp, $pasta . $nome);
 
       if ($upload == true) {
-
-
         $sql = "update promocao set
                     prm_id = '$id',
                     prm_produto = '$produto',

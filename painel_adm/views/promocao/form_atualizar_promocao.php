@@ -60,15 +60,7 @@ $dados = mysqli_fetch_array($sql);
                         <label >% Off</label>
                         <input type="number" class="form-control" name="porcentagem"  value="<?php echo $dados['prm_porcentagem'] ?>" placeholder="Insira a % off">
                       </div>
-                      <div class="col-12  mb-3">
-                        <label for="exampleInputFile">Imagem</label>
-                        <div class="input-group">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="imagem" id="exampleInputFile">
-                            <label class="custom-file-label" for="exampleInputFile">Selecionar arquivo</label>
-                          </div>
-                        </div>
-                      </div>
+
                       <div class="col-12  mb-3">
                         <label for="exampleInputFile">Imagem</label>
                         <div class="input-group">

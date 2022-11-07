@@ -19,6 +19,18 @@ $arqTemp = $_FILES['txt_imagem']['tmp_name'];
 $arqError = $_FILES['txt_imagem']['error'];
 
 if ($_FILES['txt_imagem']['name'] == '') {
+
+  $sql = "update produto set
+  pro_id = '$id',
+  pro_nome = '$produto',
+  pro_descricao = '$descricao',
+  pro_link = '$link',
+  pro_empresa = '$empresa'
+where
+  pro_id = '$id'";
+
+  mysqli_query($con, $sql) or die("Erro na sql!");
+
   header("Location: consulta_produto.php");
 } else {
   if ($arqError == 0) {
