@@ -60,13 +60,13 @@ $dados2 = mysqli_fetch_array($sql2);
                 <a style="font-weight: bold;" class="nav-link" href="index.php">Principal</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="menu.html">Produtos</a>
+                <a style="font-weight: bold;" class="nav-link" href="#produto">Produtos</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="about.php">Sobre</a>
+                <a style="font-weight: bold;" class="nav-link" href="#sobre">Sobre</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="book.html">Contato</a>
+                <a style="font-weight: bold;" class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
             <a class="btn" href="indexen.php"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
@@ -91,7 +91,7 @@ $dados2 = mysqli_fetch_array($sql2);
                       GroupX Commerce surgiu em 2019 e trabalha com vendas 100% online,
                       com maior destaque em vendas de adesivos personalizados, além de produtos PET e peças automtivas para carros preparados.
                     </p>
-                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: green !important;" class="btn1">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: green !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
                     </a>
                   </div>
@@ -110,7 +110,7 @@ $dados2 = mysqli_fetch_array($sql2);
 
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
-      <div class="container ">
+      <div id="produto" class="container ">
         <div class="row">
           <?php if ($dados !== null) { ?>
             <div class="col-md-6 ">
@@ -415,9 +415,9 @@ $dados2 = mysqli_fetch_array($sql2);
   <!-- end food section -->
 
   <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
+<div style="padding-bottom: 50px;" id="sobre"></div>
+  <section  class="about_section layout_padding">
+    <div class="container">
 
       <div class="row">
         <div class="col-md-6 ">
@@ -443,7 +443,7 @@ $dados2 = mysqli_fetch_array($sql2);
   <!-- end about section -->
 
   <!-- book section -->
-  <section class="book_section layout_padding">
+  <section id="contato" class="book_section layout_padding">
     <div class="container"  style="padding-left: 20%;">
       <div class="heading_container">
         <h2>
@@ -533,10 +533,10 @@ $dados2 = mysqli_fetch_array($sql2);
               acesso aos nossos produtos e promoções.
             </p>
             <div class="footer_social">
-              <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
-              <a href="https://www.instagram.com/groupxcommerce/">
+              <a target="_blank" href="https://www.instagram.com/groupxcommerce/">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>

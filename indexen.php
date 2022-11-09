@@ -60,22 +60,22 @@ $tr = new GoogleTranslate();
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
-                <a class="nav-link" href="indexen.php"><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php"><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="indexen.php">Home Page</a>
+                <a style="font-weight: bold;" class="nav-link" href="indexen.php">Home</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="menuen.html">Products</a>
+                <a style="font-weight: bold;" class="nav-link" href="#produto">Products</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="abouten.php">About</a>
+                <a style="font-weight: bold;" class="nav-link" href="#sobre">About</a>
               </li>
               <li class="nav-item">
-                <a style="font-weight: bold;" class="nav-link" href="booken.html">Contact</a>
+                <a style="font-weight: bold;" class="nav-link" href="#contato">Contact</a>
               </li>
             </ul>
-            <a class="btn" href="index.php"> <img class='br' src="images/bandeiradobrasil.png"></a>
+            <a class="btn" href="indexen.php"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
           </div>
         </nav>
       </div>
@@ -115,7 +115,7 @@ $tr = new GoogleTranslate();
   <!-- offer section -->
 
   <section class="offer_section layout_padding-bottom">
-    <div class="offer_container">
+    <div id="produto" class="offer_container">
       <div class="container ">
         <div class="row">
 
@@ -420,7 +420,7 @@ $tr = new GoogleTranslate();
   <!-- end food section -->
 
   <!-- about section -->
-
+  <div style="padding-bottom: 50px;" id="sobre"></div>
   <section class="about_section layout_padding">
     <div class="container  ">
 
@@ -450,7 +450,7 @@ $tr = new GoogleTranslate();
   <!-- end about section -->
 
   <!-- book section -->
-  <section class="book_section layout_padding">
+  <section id="contato" class="book_section layout_padding">
     <div class="container" style="padding-left: 20%;">
       <div class="heading_container">
         <h2>
@@ -482,7 +482,7 @@ $tr = new GoogleTranslate();
                     TurboX Parts
                   </option>
                   <option value="3">
-                    Limpa Pet
+                    Lumos Pet
                   </option>
                   <option value="4">
                     GroupX Commerce
