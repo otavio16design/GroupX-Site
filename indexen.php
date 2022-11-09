@@ -94,10 +94,10 @@ $tr = new GoogleTranslate();
                       GroupX Commerce
                     </h1>
                     <p style="font-size: 17px !important;">
-                    GroupX Commerce emerged in 2019 and works with 100% online sales,
+                      GroupX Commerce emerged in 2019 and works with 100% online sales,
                       with greater emphasis on sales of personalized stickers, in addition to PET products and auto parts for prepared cars.
-                     </p>
-                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 50px; padding-left: 3%; background-color: green !important;" class="btn1">
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: green !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
                     </a>
                   </div>
@@ -105,13 +105,6 @@ $tr = new GoogleTranslate();
               </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <ol class="carousel-indicators">
-            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#customCarousel1" data-slide-to="1"></li>
-            <li data-target="#customCarousel1" data-slide-to="2"></li>
-          </ol>
         </div>
       </div>
 
@@ -136,7 +129,7 @@ $tr = new GoogleTranslate();
 
                   <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
                   <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
-                  <a  target="_blank"  href="<?php echo $dados['prm_link'] ?>">
+                  <a target="_blank" href="<?php echo $dados['prm_link'] ?>">
                     Buy Now
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -154,7 +147,7 @@ $tr = new GoogleTranslate();
                 <div class="detail-box">
                   <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
                   <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
-                  <a  target="_blank"  href="<?php echo $dados['prm_link'] ?>">
+                  <a target="_blank" href="<?php echo $dados['prm_link'] ?>">
                     Buy Now
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -545,8 +538,8 @@ $tr = new GoogleTranslate();
               <img src="/images/Logo_GroupX-branco.png" alt="">
             </a>
             <p>
-              Abaixo deixamos as nossas redes sociais para facilitar a comunicação com o nosso cliente e facilitar o
-              acesso aos nossos produtos e promoções.
+              Below we leave our social networks to facilitate communication with our client and facilitate the
+              access to our products and promotions.
             </p>
             <div class="footer_social">
               <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!">
