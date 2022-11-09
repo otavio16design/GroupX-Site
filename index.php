@@ -57,16 +57,16 @@ $dados2 = mysqli_fetch_array($sql2);
                 <a class="nav-link" href="index.php"><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php">Principal</a>
+                <a style="font-weight: bold;" class="nav-link" href="index.php">Principal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Produtos</a>
+                <a style="font-weight: bold;" class="nav-link" href="menu.html">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.php">Sobre</a>
+                <a style="font-weight: bold;" class="nav-link" href="about.php">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">Contato</a>
+                <a style="font-weight: bold;" class="nav-link" href="book.html">Contato</a>
               </li>
             </ul>
             <a class="btn" href="indexen.php"> <img class='eng' src="images/bandeira-estados-unidos.png"></a>
@@ -87,14 +87,13 @@ $dados2 = mysqli_fetch_array($sql2);
                     <h1>
                       GroupX Commerce
                     </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
-                      quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos
-                      nihil ducimus libero ipsam.
+                    <p style="font-size: 17px !important;">
+                      GroupX Commerce surgiu em 2019 e trabalha com vendas 100% online,
+                      com maior destaque em vendas de adesivos personalizados, além de produtos PET e peças automtivas para carros preparados.
                     </p>
-                      <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 50px; padding-left: 3%; background-color: green !important;" class="btn1">
+                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 50px; padding-left: 3%; background-color: green !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
-                      </a>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -122,7 +121,7 @@ $dados2 = mysqli_fetch_array($sql2);
                 <div class="detail-box">
                   <h5> <?php echo $dados['prm_produto'] ?> </h5>
                   <h6><span><?php echo $dados['prm_porcentagem'] ?></span> Off</h6>
-                  <a href="<?php echo $dados['prm_link'] ?>">
+                  <a target="_blank" href="<?php echo $dados['prm_link'] ?>">
                     Comprar Agora
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -140,7 +139,7 @@ $dados2 = mysqli_fetch_array($sql2);
                 <div class="detail-box">
                   <h5> <?php echo $dados['prm_produto'] ?> </h5>
                   <h6><span><?php echo $dados['prm_porcentagem'] ?></span> Off</h6>
-                  <a href="<?php echo $dados['prm_link'] ?>">
+                  <a target="_blank" href="<?php echo $dados['prm_link'] ?>">
                     Comprar Agora
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -172,7 +171,7 @@ $dados2 = mysqli_fetch_array($sql2);
       <div class="filters-content">
         <div class="row grid">
           <div class="col-sm-6 col-lg-4 all pizza">
-            <div  class="box">
+            <div class="box">
               <div>
                 <div class="img-box">
                   <img src="images/fixa.png" alt="">
@@ -434,7 +433,7 @@ $dados2 = mysqli_fetch_array($sql2);
               </h2>
             </div>
             <p><?php echo $dados2['sob_texto'] ?></p>
-            
+
           </div>
         </div>
       </div>
@@ -445,14 +444,14 @@ $dados2 = mysqli_fetch_array($sql2);
 
   <!-- book section -->
   <section class="book_section layout_padding">
-    <div class="container">
+    <div class="container"  style="padding-left: 20%;">
       <div class="heading_container">
         <h2>
           Fale Conosco
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="form_container">
             <form action="">
               <div>

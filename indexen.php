@@ -63,16 +63,16 @@ $tr = new GoogleTranslate();
                 <a class="nav-link" href="indexen.php"><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="indexen.php">Home Page</a>
+                <a style="font-weight: bold;" class="nav-link" href="indexen.php">Home Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menuen.html">Products</a>
+                <a style="font-weight: bold;" class="nav-link" href="menuen.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="abouten.php">About</a>
+                <a style="font-weight: bold;" class="nav-link" href="abouten.php">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="booken.html">Contact</a>
+                <a style="font-weight: bold;" class="nav-link" href="booken.html">Contact</a>
               </li>
             </ul>
             <a class="btn" href="index.php"> <img class='br' src="images/bandeiradobrasil.png"></a>
@@ -93,9 +93,10 @@ $tr = new GoogleTranslate();
                     <h1>
                       GroupX Commerce
                     </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
+                    <p style="font-size: 17px !important;">
+                    GroupX Commerce emerged in 2019 and works with 100% online sales,
+                      with greater emphasis on sales of personalized stickers, in addition to PET products and auto parts for prepared cars.
+                     </p>
                     <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 50px; padding-left: 3%; background-color: green !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
                     </a>
@@ -135,7 +136,7 @@ $tr = new GoogleTranslate();
 
                   <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
                   <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
-                  <a href="<?php echo $dados['prm_link'] ?>">
+                  <a  target="_blank"  href="<?php echo $dados['prm_link'] ?>">
                     Buy Now
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -153,7 +154,7 @@ $tr = new GoogleTranslate();
                 <div class="detail-box">
                   <h5> <?php echo $tr->translate('pt', 'en', $dados['prm_produto']), PHP_EOL ?> </h5>
                   <h6><span><?php echo $tr->translate('pt', 'en', $dados['prm_porcentagem']), PHP_EOL ?></span> Off</h6>
-                  <a href="<?php echo $dados['prm_link'] ?>">
+                  <a  target="_blank"  href="<?php echo $dados['prm_link'] ?>">
                     Buy Now
                     <i class="fa-solid fa-cart-shopping"></i>
                   </a>
@@ -457,14 +458,14 @@ $tr = new GoogleTranslate();
 
   <!-- book section -->
   <section class="book_section layout_padding">
-    <div class="container">
+    <div class="container" style="padding-left: 20%;">
       <div class="heading_container">
         <h2>
           Contact us
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="form_container">
             <form action="">
               <div>

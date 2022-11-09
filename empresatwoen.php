@@ -113,7 +113,7 @@ $tr = new GoogleTranslate();
                       <h6>
                         Checking prices
                       </h6>
-                      <a href="<?php echo $dados['pro_link'] ?>">
+                      <a target="_blank" href="<?php echo $dados['pro_link'] ?>">
                         <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -141,7 +141,7 @@ $tr = new GoogleTranslate();
                       <h6>
                         Checking prices
                       </h6>
-                      <a href="<?php echo $dados['pro_link'] ?>">
+                      <a target="_blank" href="<?php echo $dados['pro_link'] ?>">
                         <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>

@@ -109,7 +109,7 @@ $dados = mysqli_fetch_array($sql);
                     <h6>
                       Checkin prices
                     </h6>
-                    <a href="<?php echo $dados['pro_link'] ?>">
+                    <a target="_blank" href="<?php echo $dados['pro_link'] ?>">
                       <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
                     </a>
                   </div>
@@ -138,7 +138,7 @@ $dados = mysqli_fetch_array($sql);
                       <h6>
                         Confira os preços
                       </h6>
-                      <a href="<?php echo $dados['pro_link'] ?>">
+                      <a target="_blank" href="<?php echo $dados['pro_link'] ?>">
                         <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
