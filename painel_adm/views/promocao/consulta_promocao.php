@@ -68,7 +68,7 @@ $sql = mysqli_query($con, $sql) or die("Erro na sql!");
                       <th>Produto</th>
                       <th>Porcentagem</th>
                       <th>Imagem</th>
-                      <th>Link</th>
+                      <th style="white-space: pre-wrap; max-width: 250px;">Link</th>
                       <th>Data de Cadastro</th>
                       <th>Ações</th>
                     </tr>
@@ -80,7 +80,7 @@ $sql = mysqli_query($con, $sql) or die("Erro na sql!");
                         <td><?php echo $dados['prm_produto'] ?></td>
                         <td><?php echo $dados['prm_porcentagem'] ?></td>
                         <td><?php echo $dados['prm_imagem'] ?></td>
-                        <td><?php echo $dados['prm_link'] ?></td>
+                        <td style="white-space: pre-wrap; max-width: 250px;"><?php echo $dados['prm_link'] ?></td>
                         <td><?php echo $dados['data_cadastro'] ?></td>
                         <td>
                         <a style="padding: 7px;" href="delete_promocao.php?prm_id=<?php echo $dados['prm_id']; ?>" onclick="excluir_registro(event)"><i class="fa-solid fa-trash"></i></a>

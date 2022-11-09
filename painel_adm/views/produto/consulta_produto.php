@@ -68,7 +68,7 @@ $sql = mysqli_query($con, $sql) or die("Erro na sql!");
                       <th>Produto</th>
                       <th>Descrição</th>
                       <th>Imagem</th>
-                      <th>Link</th>
+                      <th style="white-space: pre-wrap; max-width: 250px;">Link</th>
                       <th>Empresa</th>
                       <th>Data de Cadastro</th>
                       <th>Ações</th>
@@ -81,7 +81,7 @@ $sql = mysqli_query($con, $sql) or die("Erro na sql!");
                         <td><?php echo $dados['pro_nome'] ?></td>
                         <td><?php echo $dados['pro_descricao'] ?></td>
                         <td><?php echo $dados['pro_imagem'] ?></td>
-                        <td><?php echo $dados['pro_link'] ?></td>
+                        <td style="white-space: pre-wrap; max-width: 250px;"><?php echo $dados['pro_link'] ?></td>
                         <td><?php echo $dados['pro_empresa'] ?></td>
                         <td><?php echo $dados['data_cadastro'] ?></td>
                         <td>
