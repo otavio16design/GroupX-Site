@@ -89,7 +89,7 @@ $dados2 = mysqli_fetch_array($sql2);
                     </h1>
                     <p style="font-size: 17px !important;">
                       GroupX Commerce surgiu em 2019 e trabalha com vendas 100% online,
-                      com maior destaque em vendas de adesivos personalizados, além de produtos PET e peças automtivas para carros preparados.
+                      com maior destaque em vendas de adesivos personalizados, além de produtos PET e peças automotivas para carros preparados.
                     </p>
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: green !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
