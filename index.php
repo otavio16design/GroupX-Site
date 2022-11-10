@@ -37,7 +37,7 @@ $dados2 = mysqli_fetch_array($sql2);
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/logo_groupx_responsivo.png" alt="">
+      <img src="images/background.png" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -422,7 +422,7 @@ $dados2 = mysqli_fetch_array($sql2);
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about.png" alt="">
+            <img src="images/logo_groupx_responsivo_branco.png" alt="">
           </div>
         </div>
         <div class="col-md-6">
