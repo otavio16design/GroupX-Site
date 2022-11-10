@@ -43,7 +43,7 @@ $tr = new GoogleTranslate();
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/logo_groupx_responsivo.png" alt="">
+      <img src="images/groupx2.png" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -97,7 +97,7 @@ $tr = new GoogleTranslate();
                       GroupX Commerce emerged in 2019 and works with 100% online sales,
                       with greater emphasis on sales of personalized stickers, in addition to PET products and auto parts for prepared cars.
                     </p>
-                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=Ol%C3%A1%2C%20vem%20pelo%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: green !important;" class="btn1">
+                    <a href="https://api.whatsapp.com/send?phone=5519988752909&text=%20Hi%2C%20I%20came%20to%20the%20site!" style="padding: 10px; width: 55px; padding-left: 3%; background-color: white !important;" class="btn1">
                       <img src="/images/whatsapp.png" width="25px">
                     </a>
                   </div>
