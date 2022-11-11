@@ -18,7 +18,7 @@ $dados = mysqli_fetch_array($sql);
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/groupx.png" type="">
+ <link rel="shortcut icon" href="images/logo_groupx_responsivo.png" type="">
 
   <title> GroupX Commerce </title>
 

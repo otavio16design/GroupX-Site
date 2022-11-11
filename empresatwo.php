@@ -15,7 +15,7 @@ $dados = mysqli_fetch_array($sql);
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/groupx.png" type="">
+ <link rel="shortcut icon" href="images/logo_groupx_responsivo.png" type="">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -90,7 +90,7 @@ $dados = mysqli_fetch_array($sql);
       <div class="filters-content">
         <div class="row grid">
 
-          <?php while ($dados !== null) { ?>
+          <?php if ($dados !== null) { ?>
             <div class="col-sm-6 col-lg-4 all pizza">
               <div class="box">
                 <div>
